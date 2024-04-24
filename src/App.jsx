@@ -8,13 +8,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './Main Page/Main';
 import Gallery from './Gallery/Gallery';
 import ScrollTop from './Scroll To Top/ScrollTop';
-// import Preloader from '../src/Preloader/Preloader'
+import Preloader from '../src/Preloader/Preloader'
 
 function App() {
   return (
     <BrowserRouter>
       <AnimatedCursor />
-      {/* <Preloader/> */}
+      <Preloader/>
       <ScrollTop/>
       <Nav />
       <Routes>
