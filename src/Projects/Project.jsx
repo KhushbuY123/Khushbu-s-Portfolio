@@ -183,9 +183,9 @@ export default function Project() {
       title:"My-Portfolio",
       disc:"It is a Personal Portfolio Website That Showcases My Skills, Education, Experience And Projects. It Helps Others To Get To Know Me Better.",
       img:khushi,
-      git:"https://github.com/KhushbuY123/My-Portfolio",
+      git:"https://github.com/KhushbuY123/Khushbu-s-Portfolio",
       category:"React",
-      live:"https://khushbu-yadav-portfolio-wesite.netlify.app/"
+      live:"https://khushbu-s-portfolio.vercel.app/project"
     },
   ];
   
