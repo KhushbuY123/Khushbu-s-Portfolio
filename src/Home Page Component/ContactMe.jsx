@@ -2,7 +2,7 @@ import React from 'react';
 import ThreeDTextEffect from '../3-D Text/ThreeDTextEffect';
 export default function GetInTouch() {
   return (
-    <section style={{backgroundColor: 'var(--bg-clr)'}} class="body-font relative bg-gray-900 text-gray-400">
+    <section id="GetInTouch" style={{backgroundColor: 'var(--bg-clr)'}} class="body-font relative bg-gray-900 text-gray-400">
       <div class="container mx-auto px-5 py-24"> 
         <div class="mb-12 flex w-full flex-col text-center" data-aos="fade-right">
           <ThreeDTextEffect title="Get In Touch"/>

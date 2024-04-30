@@ -7,6 +7,7 @@ import gold from '../Gallery/gold1.png';
 import silver from '../Gallery/silver1.png';
 import fifty from '../Gallery/50day.png'
 import './gallery.css'
+import april from '../Gallery/april.png';
 import { CSSTransition } from 'react-transition-group';
 import Animatedbg from "../Animated Background/Animatedbg";
 export default function Gallery() {
@@ -14,9 +15,10 @@ export default function Gallery() {
     { img: python, text: "5* in python awarded by Hackerrank" },
     { img: c, text: "C" },
     { img: gold, text: "Gold" },
+    {img:april,text:"april"},
     { img: gfg, text: "GFG" },
     { img: silver, text: "Silver" },
-    {img:fifty,text:"fifty"}
+    {img:fifty,text:"fifty"},
   ];
 
   const [showModal, setShowModal] = useState(false);
@@ -44,7 +46,7 @@ export default function Gallery() {
     <Animatedbg/>
     <div className="mt-14">
       <div className="pb-12" data-aos="fade-right">
-        <ThreeDTextEffect title="Image-Gallery" />
+        <ThreeDTextEffect title="Achievements"/>
       </div>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-4 p-10 bottom-3" data-aos="fade-left">
         {data.map((item, index) => (

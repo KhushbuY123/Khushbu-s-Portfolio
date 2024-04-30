@@ -7,7 +7,8 @@ import Experience from './Experience/Experience';
 import Gallery from './Gallery/Gallery';
 import Main from './Main Page/Main'
 import ScrollTop from './Scroll To Top/ScrollTop';
-import Preloader from '../src/Preloader/Preloader';
+import GetInTouch from './Home Page Component/ContactMe';
+// import Preloader from '../src/Preloader/Preloader';
 import Error from '../src/Error/Error'
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
         <Nav />
         <AnimatedCursor />
         <ScrollTop />
-        <Preloader />
+        {/* <Preloader /> */}
         <Outlet/>
       </div>
     </>

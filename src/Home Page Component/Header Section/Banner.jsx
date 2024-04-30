@@ -8,7 +8,7 @@ export default function Banner(){
                     <p style={{color: 'var(--para-clr)' }} className='font-bold ' data-aos="fade-right">Hi👋🏻</p>
                     <p style={{color: 'var(--para-clr)' }} className='font-bold' data-aos="fade-right">I am Khushbu Yadav</p>
                     <p data-aos="fade-right"><><Writer/></></p>
-                    <div className="w-full mt-16 flex" data-aos="fade-right">
+                    <div className="w-full mt-12 flex" data-aos="fade-right">
                         <a href='https://www.linkedin.com/in/khushbu10yadav/' target='_blank'>
                             <button class="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded hover:animate-spin">
                             <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +31,9 @@ export default function Banner(){
                             </button> 
                         </a>
                     </div>
+                    <div className='mt-8' data-aos="fade-right">
+                        <a href='#GetInTouch'> <button className='font-semibold text-sm border p-2 border-red-50 rounded-md hover:bg-indigo-800 bg-gray-300 bg-opacity-10'>Hire Me ↥</button></a>
+                    </div>
                 </div>
                 <div class="w-full sm:w-1/2 mt-12 ">
                 <AvatarAnimated/>
@@ -39,3 +42,4 @@ export default function Banner(){
         </>
     )
 }
+
