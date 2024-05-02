@@ -185,7 +185,7 @@ export default function Project() {
       img:khushi,
       git:"https://github.com/KhushbuY123/Khushbu-s-Portfolio",
       category:"React",
-      live:"https://khushbu-s-portfolio.vercel.app/"
+      live:"https://github.com/KhushbuY123/Khushbu-s-Portfolio"
     },
   ];
   
