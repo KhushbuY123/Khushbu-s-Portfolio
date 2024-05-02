@@ -33,7 +33,7 @@ export default function Project() {
               <button
                 type="button"
                 className="text-white focus:outline-none hover:bg-slate-300 hover:border-b-2 py-2 px-3.5 hover:bg-opacity-20 font-medium rounded-full text-sm text-center"
-                onClick={() => setItems(data)} style={(backgroundColor="red")}>All
+                onClick={() => setItems(data)} >All
               </button>
               <button
                 type="button"
@@ -185,7 +185,7 @@ export default function Project() {
       img:khushi,
       git:"https://github.com/KhushbuY123/Khushbu-s-Portfolio",
       category:"React",
-      live:"https://github.com/KhushbuY123/Khushbu-s-Portfolio"
+      live:"https://khushbu-yadav-portfolio.netlify.app/"
     },
   ];
   
