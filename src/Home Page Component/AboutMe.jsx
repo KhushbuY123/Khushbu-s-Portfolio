@@ -9,7 +9,7 @@ export default function AboutMe() {
       <div  style={{border:'1px solid var(--main-heading)'}} id='aboutme' className="shadow-lg hover:shadow-full hover:shadow-blue-700 flex flex-wrap min-h-[400px] bg-slate-500 m-10 rounded-lg bg-opacity-20 border border-gray-400 p-10" data-aos="fade-in">
         <div className="w-full  text-gray-200 font-medium text-2xl leading-snug">
             <div className="rounded-fullw-[100px] h-[100px] content-center">
-                <img src={me} alt="me" height="100px" width="100px" className='rounded-full'></img>
+                <img src={me} alt="me" height="150px" width="100px" className='rounded-full'></img>
             </div>
             <div className='space-y-200'>
             <h2 style={{ color: 'var(--main-heading)' }}  className="text-xl font-medium tracking-tighter sm:text-xl lg:text-2xl/none">Khushbu Yadav</h2>

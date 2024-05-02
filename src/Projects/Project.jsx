@@ -33,7 +33,7 @@ export default function Project() {
               <button
                 type="button"
                 className="text-white focus:outline-none hover:bg-slate-300 hover:border-b-2 py-2 px-3.5 hover:bg-opacity-20 font-medium rounded-full text-sm text-center"
-                onClick={() => setItems(data)}>All
+                onClick={() => setItems(data)} style={(backgroundColor="red")}>All
               </button>
               <button
                 type="button"
@@ -120,7 +120,7 @@ export default function Project() {
       img:w,
       git:"https://github.com/KhushbuY123/Weather-App",
       category:"React",
-      live:'https://66103f7326d1152c3507c9d4--astounding-bonbon-e01225.netlify.app/'
+      live:'https://find-your-weather.vercel.app/'
     },
     {
       title: "E-Proximity",
@@ -185,7 +185,7 @@ export default function Project() {
       img:khushi,
       git:"https://github.com/KhushbuY123/Khushbu-s-Portfolio",
       category:"React",
-      live:"https://khushbu-yadav-portfolio-visit.netlify.app/"
+      live:"https://khushbu-s-portfolio.vercel.app/"
     },
   ];
   
