@@ -5,7 +5,7 @@ import Animatedbg from '../Animated Background/Animatedbg';
 export default function Experience(){
     return(
         <>
-        <div className=" m-8 ">
+        <div id="experience" className=" m-8 ">
             <Animatedbg/>
             <div className= "text-center text-teal-50 text-2xl font-bold mt-20" data-aos="fade-right">
                 <ThreeDTextEffect title="My Experience"/>
@@ -44,7 +44,7 @@ const data=[
     {
         year:"18 March , 2024",
         company:"Krishi Mandi",
-        position:"UI Developer Intern",
+        position:"UI Designer Intern",
         img:km
     }
 ]

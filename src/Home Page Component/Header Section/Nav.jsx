@@ -111,7 +111,7 @@ export default function Nav() {
                     className=" rounded-md px-3 py-2 text-sm font-medium"
                     onClick={closeMobileMenu}
                   >
-                    Gallery
+                    Achievements
                   </Link>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function Nav() {
               className="block rounded-md px-3 py-2 text-base font-medium"
               onClick={closeMobileMenu}
             >
-              Gallery
+              Achievements
             </Link>
           </div>
         </div>
