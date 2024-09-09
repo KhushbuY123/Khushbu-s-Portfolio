@@ -26,7 +26,7 @@ function Allprofile() {
 
   return (
     <>
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8" style={{backgroundColor: 'var(--bg-clr)'}}>
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 bg-slate-900">
         <div className='space-y-4 '>
           <div className='pt-36 mb-28' data-aos="fade-right">
             <ThreeDTextEffect title="Coding Profiles"/>

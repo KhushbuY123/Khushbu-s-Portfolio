@@ -1,6 +1,7 @@
 import ThreeDTextEffect from '../3-D Text/ThreeDTextEffect'
 import gdsc from '../Experience/gdsc.png'
 import km from '../Experience/logo (1).png'
+import sn from '../Experience/shun.jpg'
 import Animatedbg from '../Animated Background/Animatedbg';
 export default function Experience(){
     return(
@@ -46,5 +47,11 @@ const data=[
         company:"Krishi Mandi",
         position:"UI Designer Intern",
         img:km
+    },
+    {
+        year:"25 JUly , 2024",
+        company:"Shunyity Tech Solutions",
+        position:"Full Stack Developer Intern",
+        img:sn
     }
 ]
