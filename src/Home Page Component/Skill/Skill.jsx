@@ -1,85 +1,85 @@
-import html from '../Skill/html.png';
-import css from '../Skill/css.png';
-import js from '../Skill/js.png';
-import tailwind from '../Skill/tailwind.png';
-import git from '../Skill/git.png';
-import figma from '../Skill/figma.png';
-import canva from '../Skill/canva.png';
-import python from '../Skill/python.png';
-import mui from '../Skill/mui.png';
-import netlify from '../Skill/netlify.png';
-import react from '../Skill/react.png';
-import bootstrap from '../Skill/bootstrap.png';
-import node from '../Skill/node.png';
-import mongodb from "../Skill/mongodb.png";
-import mysql from "../Skill/mysql.png";
-import sql from "../Skill/sql.png";
-import npm from "../Skill/npm.png";
-import vite from "../Skill/vite.png";
-import ThreeDTextEffect from '../../3-D Text/ThreeDTextEffect';
+import ThreeDTextEffect from "../../Components/3-D Text/ThreeDTextEffect";
+import { FaCode } from "react-icons/fa6";
+import { SiRobotframework } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa6";
+import { FaCloud } from "react-icons/fa";
 
-const front = [html, css, js, tailwind, mui, bootstrap, react,vite];
-const back=[node];
-const tools=[git,figma,canva,netlify,npm];
-const Programming=[python,sql]
-const database=[mongodb,mysql]
+const skillsData = [
+  {
+    category: "Programming Languages",
+    icon: <FaCode className="w-5 h-5 text-blue-700" />,
+    skills: [
+      { name: "Javascript", icon: "🐹" },
+      { name: "TypeScript", icon: "🔷" },
+      { name: "Python", icon: "🐍" },
+      { name: "Java", icon: "⚡" },
+    ],
+  },
+  {
+    category: "Frameworks",
+    icon: <SiRobotframework className="w-5 h-5 text-blue-700" />,
+    skills: [
+      { name: "Material UI", icon: "🍸" },
+      { name: "NextJS", icon: "▲" },
+      { name: "Tailwind", icon: "🎨" },
+      { name: "React", icon: "⚛️" },
+    ],
+  },
+  {
+    category: "Database",
+    icon: <FaDatabase className="w-5 h-5 text-blue-700" />,
+    skills: [{ name: "MongoDB", icon: "🍃" }],
+  },
+  {
+    category: "Tools",
+    icon: <FaCloud className="w-5 h-5 text-blue-700" />,
+    skills: [
+      { name: "Git", icon: "☁️" },
+      { name: "Figma", icon: "⚙️" },
+      { name: "Vercel", icon: "🏗️" },
+      { name: "Render", icon: "🐳" },
+    ],
+  },
+];
 
 export default function Skill() {
-    return (
-        <div style={{ backgroundColor: 'var(--bg-clr)' }}>
-            <div className="pt-16 mb-24" data-aos="fade-right">
-                <ThreeDTextEffect title="Skills" />
+  return (
+    <div className="flex flex-col justify-center">
+      <div className="mb-6">
+        <ThreeDTextEffect title="Skills" />
+      </div>
+      <div
+        style={{ border: "1px solid var(--main-heading)" }}
+        id="aboutme"
+        className="xs:mx-0 lg:mx-28 shadow-lg hover:shadow-full hover:shadow-blue-700 flex flex-wrap min-h-[400px] bg-slate-500 m-10 rounded-lg bg-opacity-20 border border-gray-400 p-10 items-center"
+      >
+        <div className="space-y-6">
+          {skillsData.map((category, index) => (
+            <div key={index} className="flex flex-col sm:flex-row gap-12">
+              <div className="flex items-center gap-2 min-w-[200px]">
+                {category.icon}
+                <span style={{ color: "var(--main-heading)" }}>
+                  {category.category}:
+                </span>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                {category.skills.map((skill, skillIndex) => (
+                  <div
+                    key={skillIndex}
+                    className="flex items-center gap-2 px-3 py-2 bg-white rounded-full shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
+                  >
+                    <span className="text-sm">{skill.icon}</span>
+                    <span className="text-sm font-medium text-gray-700">
+                      {skill.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className='pl-6 mb-7'>
-                <p className="text-white text-2xl font-semibold pb-6 ">Front-End</p>
-                <div className="flex flex-wrap gap-6">
-                    {front.map((item, index) => (
-                        <div key={index} className="w-12 h-12 p-2 flex justify-center items-center bg-gray-800 rounded-lg overflow-hidden">
-                            <img src={item} alt={`Skill ${index}`} className="w-full h-full object-contain" />
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className='pl-6 mb-7'>
-                <p className="text-white text-2xl font-semibold pb-6">Tools</p>
-                <div className="flex flex-wrap gap-6">
-                    {tools.map((item, index) => (
-                        <div key={index} className="w-12 h-12 p-2 flex justify-center items-center bg-gray-800 rounded-lg overflow-hidden">
-                            <img src={item} alt={`Skill ${index}`} className="w-full h-full object-contain" />
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className='pl-6 mb-7'>
-                <p className="text-white text-2xl font-semibold pb-6 ">Back-End</p>
-                <div className="flex flex-wrap gap-6">
-                    {back.map((item, index) => (
-                        <div key={index} className="w-12 h-12 p-2 flex justify-center items-center bg-gray-800 rounded-lg overflow-hidden">
-                            <img src={item} alt={`Skill ${index}`} className="w-full h-full object-contain" />
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className='pl-6 mb-7'>
-                <p className="text-white text-2xl font-semibold pb-6">Programming</p>
-                <div className="flex flex-wrap gap-6">
-                    {Programming.map((item, index) => (
-                        <div key={index} className="w-12 h-12 p-2 flex justify-center items-center bg-gray-800 rounded-lg overflow-hidden">
-                            <img src={item} alt={`Skill ${index}`} className="w-full h-full object-contain" />
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className='pl-6 mb-7'>
-                <p className="text-white text-2xl font-semibold pb-6 ">Database</p>
-                <div className="flex flex-wrap gap-6">
-                    {database.map((item, index) => (
-                        <div key={index} className="w-12 h-12 p-2 flex justify-center items-center bg-gray-800 rounded-lg overflow-hidden">
-                            <img src={item} alt={`Skill ${index}`} className="w-full h-full object-contain" />
-                        </div>
-                    ))}
-                </div>
-            </div>
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 }
