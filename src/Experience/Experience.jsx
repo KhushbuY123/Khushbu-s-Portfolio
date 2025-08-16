@@ -17,18 +17,15 @@ export default function Experience() {
         <div className="p-20" data-aos="fade-left">
           <ol className="relative border-s border-gray-200 dark:border-gray-700 ">
             {data.map((d, index) => (
-              <li
-                className="mb-10 ms-6 shadow-lg hover:shadow-md hover:shadow-blue-700"
-                key={index}
-              >
-                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <li className="mb-10 ms-6" key={index}>
+                <span className="absolute flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                   <img
                     className="rounded-full shadow-lg"
                     src={d.img}
                     alt="Thomas Lean image"
                   />
                 </span>
-                <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600">
+                <div className="p-4 hover:shadow-md hover:shadow-blue-700 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 ml-4">
                   <div className="items-center justify-between mb-3 sm:flex">
                     <time className="mb-1 text-xs font-normal text-gray-500 sm:order-last sm:mb-0">
                       {d.year}
@@ -51,11 +48,18 @@ export default function Experience() {
 }
 const data = [
   {
-    year: "Sep 2023",
-    company: "Google Developer Student Clubs",
-    position: "Marketing Team Lead",
-    img: gdsc,
+    year: "25 JUly , 2025",
+    company: "Shunyity Tech Solutions",
+    position: "Associate Software Engineer",
+    img: sn,
   },
+  {
+    year: "25 JUly , 2024",
+    company: "Shunyity Tech Solutions",
+    position: "Full Stack Developer Intern",
+    img: sn,
+  },
+
   {
     year: "18 March , 2024",
     company: "Krishi Mandi",
@@ -63,9 +67,9 @@ const data = [
     img: km,
   },
   {
-    year: "25 JUly , 2024",
-    company: "Shunyity Tech Solutions",
-    position: "Full Stack Developer Intern",
-    img: sn,
+    year: "Sep 2023",
+    company: "Google Developer Student Clubs",
+    position: "Marketing Team Lead",
+    img: gdsc,
   },
 ];
