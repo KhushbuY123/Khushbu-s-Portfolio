@@ -1,14 +1,14 @@
-import React from 'react';
-import { RouterProvider, createBrowserRouter ,Outlet } from 'react-router-dom'; // Import RouterProvider and createBrowserRouter
-import Nav from './Home Page Component/Header Section/Nav';
-import AnimatedCursor from '../src/Animated Cursor/AnimatedCursor';
-import Project from './Projects/Project';
-import Experience from './Experience/Experience';
-import Gallery from './Gallery/Gallery';
-import Main from './Main Page/Main'
-import ScrollTop from './Scroll To Top/ScrollTop';
-import Preloader from '../src/Preloader/Preloader';
-import Error from '../src/Error/Error'
+import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import Nav from "./Components/Nav";
+import Project from "./Projects/Project";
+import Experience from "./Experience/Experience";
+import Gallery from "./Gallery/Gallery";
+import Main from "./Main Page/Main";
+import Preloader from "./Components/Preloader/Preloader";
+import AnimatedCursor from "./Components/Animated Cursor/AnimatedCursor";
+import ScrollTop from "./Components/Scroll To Top/ScrollTop";
+import Error from "./Components/Error/Error";
+
 const App = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const App = () => {
         <AnimatedCursor />
         <ScrollTop />
         <Preloader />
-        <Outlet/>
+        <Outlet />
       </div>
     </>
   );
@@ -25,28 +25,28 @@ const App = () => {
 
 const appRouter = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     children: [
       {
-        path:"/",
-        element:<Main/>
+        path: "/",
+        element: <Main />,
       },
       {
-        path: '/project',
-        element: <Project />
+        path: "/project",
+        element: <Project />,
       },
       {
-        path: '/gallery',
-        element: <Gallery />
+        path: "/gallery",
+        element: <Gallery />,
       },
       {
-        path: '/experience',
-        element: <Experience />
-      }
+        path: "/experience",
+        element: <Experience />,
+      },
     ],
-    errorElement: <Error />
-  }
+    errorElement: <Error />,
+  },
 ]);
 const Root = () => {
   return (
@@ -56,7 +56,4 @@ const Root = () => {
   );
 };
 
-export default Root; 
-
-
-
+export default Root;

@@ -1,11 +1,13 @@
-.App{
-    font-weight: 700;
-    font-size: 2.2rem;
-    display: flex;
-    color: #6366F1;
+.App {
+  font-weight: 700;
+  font-size: 3rem;
+  display: flex;
+  margin-top: 0.5rem;
+  color: #6366f1;
 }
-@media (max-width:475px) {
-    .App{
-        font-size:1.5rem
-    }
+@media (max-width: 475px) {
+  .App {
+    font-size: 1.75rem;
+    margin-top: 0.3rem;
+  }
 }
