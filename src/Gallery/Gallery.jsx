@@ -6,12 +6,14 @@ import c from "../Gallery/c1.png";
 import gold from "../Gallery/gold1.png";
 import silver from "../Gallery/silver1.png";
 import fifty from "../Gallery/50day.png";
+import codevita from "../Gallery/codevita.png";
 import "./gallery.css";
 import april from "../Gallery/april.png";
 import { CSSTransition } from "react-transition-group";
 import Animatedbg from "../Components/Animated Background/Animatedbg";
 export default function Gallery() {
   const data = [
+    { img: codevita, text: "codevita" },
     { img: python, text: "5* in python awarded by Hackerrank" },
     { img: c, text: "C" },
     { img: gold, text: "Gold" },
@@ -48,7 +50,7 @@ export default function Gallery() {
   return (
     <>
       <Animatedbg />
-      <div className="mt-14">
+      <div className="max-w-[1260px] mx-auto mt-14">
         <div className="pb-12" data-aos="fade-right">
           <ThreeDTextEffect title="Achievements" />
         </div>

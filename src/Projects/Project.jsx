@@ -24,7 +24,7 @@ export default function Project() {
   return (
     <>
       <Animatedbg />
-      <div className="container my-12 mx-auto md:px-3 content-center">
+      <div className="max-w-[1260px] container my-12 mx-auto md:px-3 content-center">
         <section className="mb-12 text-center">
           <div className="mb-16 pb-2 mt-12 " data-aos="fade-right">
             <ThreeDTextEffect title="Project" />
@@ -70,12 +70,9 @@ export default function Project() {
               React
             </button>
           </div>
-          <div
-            className="grid gap-6 lg:grid-cols-3 xl:gap-x-8 ml-24 "
-            data-aos="fade-left"
-          >
+          <div className="grid gap-6 lg:grid-cols-3 ml-24" data-aos="fade-left">
             {items.map((d, index) => (
-              <div key={index} className="mb-6 lg:mb-0 w-3/4 ">
+              <div key={index} className="mb-6 lg:mb-0  ">
                 <div
                   style={{
                     backgroundColor: "var(--bg-clri)",

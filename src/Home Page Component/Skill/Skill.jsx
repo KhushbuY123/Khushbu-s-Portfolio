@@ -12,7 +12,6 @@ const skillsData = [
       { name: "Javascript", icon: "🐹" },
       { name: "TypeScript", icon: "🔷" },
       { name: "Python", icon: "🐍" },
-      { name: "Java", icon: "⚡" },
     ],
   },
   {
